@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>DeepCOP Solutions</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #0d1117;
       color: #c9d1d9;
       display: flex;
       flex-direction: column;
@@ -16,16 +15,24 @@
       justify-content: center;
       height: 100vh;
       text-align: center;
+      background: linear-gradient(rgba(13, 17, 23, 0.8), rgba(13, 17, 23, 0.8)),
+                  url('background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
     }
+
     h1 {
       font-size: 3em;
       margin-bottom: 0.5em;
     }
+
     p {
       font-size: 1.2em;
       max-width: 600px;
       margin-bottom: 1.5em;
     }
+
     button {
       background-color: #238636;
       color: white;
@@ -36,9 +43,11 @@
       border-radius: 8px;
       transition: background-color 0.3s ease;
     }
+
     button:hover {
       background-color: #2ea043;
     }
+
     footer {
       position: absolute;
       bottom: 20px;
