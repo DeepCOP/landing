@@ -15,11 +15,19 @@
       justify-content: center;
       height: 100vh;
       text-align: center;
-      background: linear-gradient(rgba(13, 17, 23, 0.8), rgba(13, 17, 23, 0.8)),
-                  url('background.png');
+      background: url('background.png');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+    }
+
+    .modal {
+      background-color: rgba(13, 17, 23, 0.4); /* dark semi-transparent */
+      padding: 2em;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      max-width: 700px;
+      margin: 1em;
     }
 
     h1 {
@@ -58,9 +66,11 @@
 </head>
 <body>
 
-  <h1>DeepCOP Solutions</h1>
-  <p>Specializing in cutting-edge software development, blockchain, and Web3 innovation. Empowering the decentralized future, one line of code at a time.</p>
-  <button onclick="contactUs()">Contact Us</button>
+  <div class="modal">
+    <h1>DeepCOP Solutions</h1>
+    <p>Specializing in cutting-edge software development, blockchain, and Web3 innovation. Empowering the decentralized future, one line of code at a time.</p>
+    <button onclick="contactUs()">Contact Us</button>
+  </div>
 
   <footer>
     &copy; 2025 DeepCOP Solutions. All rights reserved.
