@@ -4,74 +4,45 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="icon" href="/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
   <title>DeepCOP Solutions</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: #c9d1d9;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-      background: url('background.png');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-    }
-
-    .modal {
-      background-color: rgba(13, 17, 23, 0.4); /* dark semi-transparent */
-      padding: 2em;
-      border-radius: 16px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-      max-width: 700px;
-      margin: 1em;
-    }
-
-    h1 {
-      font-size: 3em;
-      margin-bottom: 0.5em;
-    }
-
-    p {
-      font-size: 1.2em;
-      max-width: 600px;
-      margin-bottom: 1.5em;
-    }
-
-    button {
-      background-color: #238636;
-      color: white;
-      border: none;
-      padding: 0.75em 1.5em;
-      font-size: 1em;
-      cursor: pointer;
-      border-radius: 8px;
-      transition: background-color 0.3s ease;
-    }
-
-    button:hover {
-      background-color: #2ea043;
-    }
-
-    footer {
-      position: absolute;
-      bottom: 20px;
-      font-size: 0.9em;
-      color: #8b949e;
-    }
-  </style>
 </head>
 <body>
 
-  <div class="modal">
-    <h1>DeepCOP Solutions</h1>
-    <p>Specializing in cutting-edge software development, blockchain, and Web3 innovation. Empowering the decentralized future, one line of code at a time.</p>
-    <button onclick="contactUs()">Contact Us</button>
+  <div class="container">
+    <div class="modal">
+      <h1>DeepCOP Solutions</h1>
+      <p>Specializing in cutting-edge software development, blockchain, and Web3 innovation. Empowering the decentralized future, one line of code at a time.</p>
+      <button onclick="contactUs()">Contact Us</button>
+    </div>
   </div>
+
+  <section id="portfolio">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="images/project1.jpg" alt="Screenshot of Project 1">
+        <div class="content">
+          <h3>AI Dashboard</h3>
+          <p>Built with Next.js and Tailwind, this dashboard monitors machine learning pipelines in real time.</p>
+          <a href="https://example.com" target="_blank">View Live</a> |
+          <a href="https://github.com/yourusername/project1" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="images/project2.jpg" alt="Screenshot of Project 2">
+        <div class="content">
+          <h3>Crypto Wallet UI2</h3>
+          <p>React-based Web3 wallet interface supporting MetaMask integration and token management.</p>
+          <a href="https://example.com" target="_blank">View Live</a> |
+          <a href="https://github.com/yourusername/project2" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <footer>
     &copy; 2025 DeepCOP Solutions. All rights reserved.
