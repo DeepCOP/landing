@@ -15,7 +15,7 @@ body {
   justify-content: center;
   text-align: center;
   padding: 4em 2em 2em 2em;
-  min-height: 90vh; /* Less than full screen to reveal scroll */
+  min-height: 90vh; /* Slightly shorter than full screen */
 }
 
 .modal {
@@ -69,15 +69,19 @@ section#portfolio h2 {
   margin-bottom: 40px;
 }
 
+/* ✅ Centered horizontal scroll row */
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  justify-content: center; /* Centered on wider screens */
+  overflow-x: auto;
   gap: 30px;
-  max-width: 1200px;
-  margin: auto;
+  padding: 1rem 10px;
+  scroll-snap-type: x mandatory;
 }
 
 .project-card {
+  flex: 0 0 300px;
+  scroll-snap-align: start;
   background: #161b22;
   border-radius: 12px;
   overflow: hidden;
@@ -111,6 +115,18 @@ section#portfolio h2 {
 
 .project-card a:hover {
   text-decoration: underline;
+}
+
+/* Optional: scrollbar style */
+.projects-grid::-webkit-scrollbar {
+  height: 8px;
+}
+.projects-grid::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+.projects-grid::-webkit-scrollbar-track {
+  background: transparent;
 }
 
 footer {
