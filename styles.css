@@ -14,28 +14,28 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 4em 2em 2em 2em;
-  min-height: 90vh; /* Slightly shorter than full screen */
+  padding: 1.5em 1em 0.5em 1em; /* Very tight vertical space */
+  min-height: 75vh;
 }
 
 .modal {
   background-color: rgba(13, 17, 23, 0.4);
-  padding: 2em;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-  max-width: 700px;
-  margin-bottom: 1em;
-}
-
-h1 {
-  font-size: 3em;
+  padding: 1.2em 1.5em;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  max-width: 680px;
   margin-bottom: 0.5em;
 }
 
+h1 {
+  font-size: 2.4em;
+  margin-bottom: 0.4em;
+}
+
 p {
-  font-size: 1.2em;
-  max-width: 600px;
-  margin-bottom: 1.5em;
+  font-size: 1.1em;
+  max-width: 580px;
+  margin-bottom: 1em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -44,11 +44,11 @@ button {
   background-color: #238636;
   color: white;
   border: none;
-  padding: 0.75em 1.5em;
-  font-size: 1em;
+  padding: 0.6em 1.2em;
+  font-size: 0.95em;
   cursor: pointer;
-  border-radius: 8px;
-  transition: background-color 0.3s ease;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
 }
 
 button:hover {
@@ -57,40 +57,40 @@ button:hover {
 
 section#portfolio {
   background-color: rgba(13, 17, 23, 0.85);
-  padding: 60px 20px;
+  padding: 35px 15px;
   color: #c9d1d9;
-  margin-top: -40px;
-  border-top: 2px solid #2ea04320;
+  margin-top: 0;
+  border-top: 1px solid #2ea04320;
 }
 
 section#portfolio h2 {
   text-align: center;
-  font-size: 2.5em;
-  margin-bottom: 40px;
+  font-size: 2em;
+  margin-bottom: 30px;
 }
 
-/* ✅ Centered horizontal scroll row */
+/* Horizontal row, scrollable and compact */
 .projects-grid {
   display: flex;
-  justify-content: center; /* Centered on wider screens */
+  justify-content: center;
   overflow-x: auto;
-  gap: 30px;
-  padding: 1rem 10px;
+  gap: 20px;
+  padding: 0 10px 1rem 10px;
   scroll-snap-type: x mandatory;
 }
 
 .project-card {
-  flex: 0 0 300px;
+  flex: 0 0 260px;  /* More compact card */
   scroll-snap-align: start;
   background: #161b22;
-  border-radius: 12px;
+  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.25);
   transition: transform 0.2s ease-in-out;
 }
 
 .project-card:hover {
-  transform: scale(1.03);
+  transform: scale(1.02);
 }
 
 .project-card img {
@@ -100,30 +100,37 @@ section#portfolio h2 {
 }
 
 .project-card .content {
-  padding: 20px;
+  padding: 15px;
 }
 
 .project-card h3 {
   margin-top: 0;
-  font-size: 1.3em;
+  font-size: 1.15em;
+  margin-bottom: 0.4em;
+}
+
+.project-card p {
+  font-size: 0.95em;
+  margin-bottom: 0.6em;
 }
 
 .project-card a {
   text-decoration: none;
   color: #58a6ff;
+  font-size: 0.95em;
 }
 
 .project-card a:hover {
   text-decoration: underline;
 }
 
-/* Optional: scrollbar style */
+/* Scrollbar appearance */
 .projects-grid::-webkit-scrollbar {
-  height: 8px;
+  height: 6px;
 }
 .projects-grid::-webkit-scrollbar-thumb {
   background: #333;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 .projects-grid::-webkit-scrollbar-track {
   background: transparent;
@@ -131,7 +138,7 @@ section#portfolio h2 {
 
 footer {
   text-align: center;
-  padding: 20px;
-  font-size: 0.9em;
+  padding: 16px;
+  font-size: 0.85em;
   color: #8b949e;
 }
